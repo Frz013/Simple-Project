@@ -1,1 +1,1 @@
-A simple HTML/JS/CSS starter template
+A simpel website with HTML,CSS,JS

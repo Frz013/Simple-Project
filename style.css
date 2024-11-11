@@ -1,1 +1,8 @@
-/* Add styles here */
+body {
+    height: 5000px;
+}
+
+.col img {
+    height: 100px;
+    width: 100px;
+}
