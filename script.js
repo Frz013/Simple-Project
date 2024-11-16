@@ -86,9 +86,20 @@ function saklar() {
     let toggle3 = document.getElementById("togglerk3");
     let toggleAll = document.getElementById("togglerkall");
     
+    let toggleRM = document.getElementById("togglerm1");
+
+    let toggleRT1 = document.getElementById("togglert1");
+    let toggleRT2 = document.getElementById("togglert2");
+    let toggleAllRT = document.getElementById("togglerkallrt");
+    
     let lampu1 = document.getElementById("lampu1rk");
     let lampu2 = document.getElementById("lampu2rk");
     let lampu3 = document.getElementById("lampu3rk");
+    
+    let lampuRM = document.getElementById("lampu1rm");
+
+    let lampuRT1 = document.getElementById("lampu1rt");
+    let lampuRT2 = document.getElementById("lampu2rt");
     
     function updateLampu(toggle, lampu) {
       lampu.src = toggle.checked ? "assets/images/on.gif" : "assets/images/off.gif";
@@ -106,6 +117,18 @@ function saklar() {
     toggle3.addEventListener("change", function() {
       updateLampu(toggle3, lampu3);
     });
+
+    toggleRM.addEventListener("change", function() {
+      updateLampu(toggleRM, lampuRM);
+    });
+
+    toggleRT1.addEventListener("change", function() {
+      updateLampu(toggleRT1, lampuRT1);
+    });
+    
+    toggleRT2.addEventListener("change", function() {
+      updateLampu(toggleRT2, lampuRT2);
+    });
     
     toggleAll.addEventListener("change", function() {
       let isChecked = toggleAll.checked;
@@ -117,4 +140,16 @@ function saklar() {
       updateLampu(toggle2, lampu2);
       updateLampu(toggle3, lampu3);
     });
-  }
+
+    toggleAllRT.addEventListener("change", function() {
+      let isCheckedRT = toggleAllRT.checked;
+      toggleRT1.checked = isCheckedRT;
+      toggleRT2.checked = isCheckedRT;
+  
+      
+      updateLampu(toggleRT1, lampuRT1);
+      updateLampu(toggleRT2, lampuRT2);
+  
+    });
+}
+  

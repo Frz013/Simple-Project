@@ -6,3 +6,23 @@ body {
     height: 100px;
     width: 100px;
 }
+/* function saklarRT() {
+  let toggleRT1 = document.getElementById("togglert1");
+  let toggleRT2 = document.getElementById("togglert2");
+  let toggleAllRT = document.getElementById("togglerkallrt");
+
+  let lampuRT1 = document.getElementById("lampu1rt");
+  let lampuRT2 = document.getElementById("lampu2rt");
+
+  function updateLampuRT(toggleRT, lampuRT) {
+    lampuRT.src = toggleRT.checked ? "assets/images/on.gif" : "assets/images/off.gif";
+  }
+
+  toggleRT1.addEventListener("change", function() {
+    updateLampu(toggleRT1, lampuRT1);
+  });
+  
+  toggleRT2.addEventListener("change", function() {
+    updateLampu(toggleRT2, lampuRT2);
+  });
+} */

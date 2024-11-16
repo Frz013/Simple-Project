@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet">
@@ -45,7 +45,7 @@
   </nav>
 <body>
     <div class="container-md">
-        <div class="">
+        <div class="apa">
             <div class="container text-center">
                 <div class="row row-cols-4">
 
@@ -130,17 +130,97 @@
             
 
                 <div class="col">
-                      <h1>RUANGAN MAKAN</h1>
-                      <img src="assets/images/on.gif" alt="">
+                  <div class="card">
+                    <div class="card-header">
+                        <h1>RUANGAN MAKAN</h1>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <div class="ruangKeluarga">
+
+                        <div class="rmlampu1">
+                        <img src="assets/images/off.gif" alt="" id="lampu1rm">
+                        <label for="togglerm1" class="inline-flex relative items-center
+                        cursor-pointer">
+                          <input type="checkbox" id="togglerm1" class="sr-only
+                              peer" onchange="saklar()">
+                          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
+                              peer-focus:ring-4 peer-focus:ring-blue-300
+                              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+                              peer-checked:after:translate-x-full peer-checked:after:border-white
+                              after:content-[''] after:absolute after:top-[2px] after:left-[2px]
+                              after:bg-white after:border-gray-300 after:border after:rounded-full
+                              after:h-5 after:w-5 after:transition-all dark:border-gray-600
+                              peer-checked:bg-blue-600">
+                            </div>
+                          </label>
+                        </div>
+                    </div>
+                  </div>
                       
                 </div>
 
 
                 <div class="col">
-                      <h1>RUANGAN TIDUR</h1>
-                      <img src="assets/images/on.gif" alt="">
-                      <img src="assets/images/on.gif" alt="">
-                      
+                  <div class="card">
+                    <div class="card-header">
+                        <h1>RUANGAN TIDUR</h1>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <div class="ruangTidur">
+
+                          <div class="rtlampu1">
+                        <img src="assets/images/off.gif" alt="" id="lampu1rt">
+                        <label for="togglert1" class="inline-flex relative items-center
+                        cursor-pointer">
+                          <input type="checkbox" id="togglert1" class="sr-only
+                              peer" onchange="saklar()">
+                          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
+                              peer-focus:ring-4 peer-focus:ring-blue-300
+                              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+                              peer-checked:after:translate-x-full peer-checked:after:border-white
+                              after:content-[''] after:absolute after:top-[2px] after:left-[2px]
+                              after:bg-white after:border-gray-300 after:border after:rounded-full
+                              after:h-5 after:w-5 after:transition-all dark:border-gray-600
+                              peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+                    <div class="rtlampu2">
+                      <img src="assets/images/off.gif" alt="" id="lampu2rt">
+                      <label for="togglert2" class="inline-flex relative items-center
+                          cursor-pointer">
+                          <input type="checkbox" id="togglert2" class="sr-only
+                              peer" onchange="saklar()">
+                          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
+                              peer-focus:ring-4 peer-focus:ring-blue-300
+                              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+                              peer-checked:after:translate-x-full peer-checked:after:border-white
+                              after:content-[''] after:absolute after:top-[2px] after:left-[2px]
+                              after:bg-white after:border-gray-300 after:border after:rounded-full
+                              after:h-5 after:w-5 after:transition-all dark:border-gray-600
+                              peer-checked:bg-blue-600">
+                          </div>
+                      </label>
+                      <br>
+                      <br>
+                        <label for="togglerkallrt" class="inline-flex relative items-center
+                        cursor-pointer">
+                        <input type="checkbox" id="togglerkallrt" class="sr-only
+                        peer" onchange="saklar()">
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
+                        peer-focus:ring-4 peer-focus:ring-blue-300
+                        dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
+                        peer-checked:after:translate-x-full peer-checked:after:border-white
+                        after:content-[''] after:absolute after:top-[2px] after:left-[2px]
+                        after:bg-white after:border-gray-300 after:border after:rounded-full
+                        after:h-5 after:w-5 after:transition-all dark:border-gray-600
+                        peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+                  </div>
+                </div>
                 </div>
 
 
@@ -155,5 +235,5 @@
                 </div>
             </div>
         </div>
-    </div
+     </div>
 </body>
