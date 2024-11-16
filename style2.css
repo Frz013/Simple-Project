@@ -1,5 +1,14 @@
-.apa {
+.card {
     display: flex;
     margin: 10px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
 
+.jarak {
+    display: inline-flex;
+}
+.col-sm-4 {
+    display: flex;
 }

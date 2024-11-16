@@ -88,6 +88,12 @@ function saklar() {
     
     let toggleRM = document.getElementById("togglerm1");
 
+    let toggleRTM1 = document.getElementById("togglertm1");
+    let toggleRTM2 = document.getElementById("togglertm2");
+    let toggleRTM3 = document.getElementById("togglertm3");
+    let toggleRTM4 = document.getElementById("togglertm4");
+    let toggleAllRTM = document.getElementById("togglerkallrtm");
+
     let toggleRT1 = document.getElementById("togglert1");
     let toggleRT2 = document.getElementById("togglert2");
     let toggleAllRT = document.getElementById("togglerkallrt");
@@ -100,6 +106,11 @@ function saklar() {
 
     let lampuRT1 = document.getElementById("lampu1rt");
     let lampuRT2 = document.getElementById("lampu2rt");
+
+    let lampuRTM1 = document.getElementById("lampu1rtm");
+    let lampuRTM2 = document.getElementById("lampu2rtm");
+    let lampuRTM3 = document.getElementById("lampu3rtm");
+    let lampuRTM4 = document.getElementById("lampu4rtm");
     
     function updateLampu(toggle, lampu) {
       lampu.src = toggle.checked ? "assets/images/on.gif" : "assets/images/off.gif";
@@ -130,6 +141,22 @@ function saklar() {
       updateLampu(toggleRT2, lampuRT2);
     });
     
+    toggleRTM1.addEventListener("change", function() {
+      updateLampu(toggleRTM1, lampuRTM1);
+    });
+    
+    toggleRTM2.addEventListener("change", function() {
+      updateLampu(toggleRTM2, lampuRTM2);
+    });
+    
+    toggleRTM3.addEventListener("change", function() {
+      updateLampu(toggleRTM3, lampuRTM3);
+    });
+    
+    toggleRTM4.addEventListener("change", function() {
+      updateLampu(toggleRTM4, lampuRTM4);
+    });
+    
     toggleAll.addEventListener("change", function() {
       let isChecked = toggleAll.checked;
       toggle1.checked = isChecked;
@@ -149,6 +176,21 @@ function saklar() {
       
       updateLampu(toggleRT1, lampuRT1);
       updateLampu(toggleRT2, lampuRT2);
+  
+    });
+
+    toggleAllRTM.addEventListener("change", function() {
+      let isCheckedRTM = toggleAllRTM.checked;
+      toggleRTM1.checked = isCheckedRTM;
+      toggleRTM2.checked = isCheckedRTM;
+      toggleRTM3.checked = isCheckedRTM;
+      toggleRTM4.checked = isCheckedRTM;
+  
+      
+      updateLampu(toggleRTM1, lampuRTM1);
+      updateLampu(toggleRTM2, lampuRTM2); 
+      updateLampu(toggleRTM3, lampuRTM3);
+      updateLampu(toggleRTM4, lampuRTM4);
   
     });
 }

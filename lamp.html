@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
   <head>
-    <link rel="stylesheet" href="style2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet">
-    <link rel="stylesheet"
-      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" type="application/javascript"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latihan Lampu</title>
   </head>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar sticky-top bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-    
+  <nav
+    class="navbar navbar-expand-lg bg-body-tertiary navbar sticky-top bg-body-tertiary navbar bg-dark border-bottom border-body"
+    data-bs-theme="dark"
+  >
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -30,210 +53,315 @@
             <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               More Project
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html">Genshin Characters Info</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item" href="index.html"
+                  >Genshin Characters Info</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
             </ul>
-          </li>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-<body>
+  <body>
     <div class="container-md">
-        <div class="apa">
-            <div class="container text-center">
-                <div class="row row-cols-4">
-
-
-                  <div class="col">
-                    <div class="card">
-                        <div class="card-header">
-                            <h1>RUANGAN KELUARGA</h1>
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title"></h5>
-                          <div class="ruangKeluarga">
-
-                              <div class="rklampu1">
-                            <img src="assets/images/off.gif" alt="" id="lampu1rk">
-                            <label for="togglerk1" class="inline-flex relative items-center
-                            cursor-pointer">
-                              <input type="checkbox" id="togglerk1" class="sr-only
-                                  peer" onchange="saklar()">
-                              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
-                                  peer-focus:ring-4 peer-focus:ring-blue-300
-                                  dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-                                  peer-checked:after:translate-x-full peer-checked:after:border-white
-                                  after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                                  after:bg-white after:border-gray-300 after:border after:rounded-full
-                                  after:h-5 after:w-5 after:transition-all dark:border-gray-600
-                                  peer-checked:bg-blue-600"></div>
-                              </label>
-                        </div>
-  
-                        <div class="rklampu2">
-                          <img src="assets/images/off.gif" alt="" id="lampu2rk">
-                          <label for="togglerk2" class="inline-flex relative items-center
-                              cursor-pointer">
-                              <input type="checkbox" id="togglerk2" class="sr-only
-                                  peer" onchange="saklar()">
-                              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
-                                  peer-focus:ring-4 peer-focus:ring-blue-300
-                                  dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-                                  peer-checked:after:translate-x-full peer-checked:after:border-white
-                                  after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                                  after:bg-white after:border-gray-300 after:border after:rounded-full
-                                  after:h-5 after:w-5 after:transition-all dark:border-gray-600
-                                  peer-checked:bg-blue-600"></div>
-                              </label>
-                        </div>
-  
-                        <div class="rklampu3">
-                          <img src="assets/images/off.gif" alt="" id="lampu3rk">
-                          <label for="togglerk3" class="inline-flex relative items-center
-                              cursor-pointer">
-                              <input type="checkbox" id="togglerk3" class="sr-only
-                                  peer" onchange="saklar()">
-                              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
-                              peer-focus:ring-4 peer-focus:ring-blue-300
-                              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-                              peer-checked:after:translate-x-full peer-checked:after:border-white
-                              after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                              after:bg-white after:border-gray-300 after:border after:rounded-full
-                              after:h-5 after:w-5 after:transition-all dark:border-gray-600
-                              peer-checked:bg-blue-600"></div>
-                            </label>
-                            <br>
-                            <br>
-                                </div>
-                                <label for="togglerkall" class="inline-flex relative items-center
-                                cursor-pointer">
-                                <input type="checkbox" id="togglerkall" class="sr-only
-                                peer" onchange="saklar()">
-                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
-                                peer-focus:ring-4 peer-focus:ring-blue-300
-                                dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-                                peer-checked:after:translate-x-full peer-checked:after:border-white
-                                after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                                after:bg-white after:border-gray-300 after:border after:rounded-full
-                                after:h-5 after:w-5 after:transition-all dark:border-gray-600
-                                peer-checked:bg-blue-600"></div>
-                                </label>
-                          </div>
+      <div class="jarak">
+        <div class="container text-center">
+          <div class="">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h1>RUANGAN KELUARGA</h1>
                 </div>
-            </div>
-            
-
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header">
-                        <h1>RUANGAN MAKAN</h1>
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <div class="ruangKeluarga">
+                    <div class="rklampu1">
+                      <img src="assets/images/off.gif" alt="" id="lampu1rk" />
+                      <label
+                        for="togglerk1"
+                        class="inline-flex relative items-center cursor-pointer"
+                      >
+                        <input
+                          type="checkbox"
+                          id="togglerk1"
+                          class="sr-only peer"
+                          onchange="saklar()"
+                        />
+                        <div
+                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                        ></div>
+                      </label>
                     </div>
-                    <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <div class="ruangKeluarga">
 
-                        <div class="rmlampu1">
-                        <img src="assets/images/off.gif" alt="" id="lampu1rm">
-                        <label for="togglerm1" class="inline-flex relative items-center
-                        cursor-pointer">
-                          <input type="checkbox" id="togglerm1" class="sr-only
-                              peer" onchange="saklar()">
-                          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
-                              peer-focus:ring-4 peer-focus:ring-blue-300
-                              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-                              peer-checked:after:translate-x-full peer-checked:after:border-white
-                              after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                              after:bg-white after:border-gray-300 after:border after:rounded-full
-                              after:h-5 after:w-5 after:transition-all dark:border-gray-600
-                              peer-checked:bg-blue-600">
-                            </div>
-                          </label>
-                        </div>
+                    <div class="rklampu2">
+                      <img src="assets/images/off.gif" alt="" id="lampu2rk" />
+                      <label
+                        for="togglerk2"
+                        class="inline-flex relative items-center cursor-pointer"
+                      >
+                        <input
+                          type="checkbox"
+                          id="togglerk2"
+                          class="sr-only peer"
+                          onchange="saklar()"
+                        />
+                        <div
+                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                        ></div>
+                      </label>
+                    </div>
+
+                    <div class="rklampu3">
+                      <img src="assets/images/off.gif" alt="" id="lampu3rk" />
+                      <label
+                        for="togglerk3"
+                        class="inline-flex relative items-center cursor-pointer"
+                      >
+                        <input
+                          type="checkbox"
+                          id="togglerk3"
+                          class="sr-only peer"
+                          onchange="saklar()"
+                        />
+                        <div
+                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                        ></div>
+                      </label>
+                      <br />
+                      <br />
+                    </div>
+                    <label
+                      for="togglerkall"
+                      class="inline-flex relative items-center cursor-pointer"
+                    >
+                      <input
+                        type="checkbox"
+                        id="togglerkall"
+                        class="sr-only peer"
+                        onchange="saklar()"
+                      />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                      ></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h1>RUANGAN MAKAN</h1>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <div class="ruangKeluarga">
+                      <div class="rmlampu1">
+                        <img src="assets/images/off.gif" alt="" id="lampu1rm" />
+                        <label
+                          for="togglerm1"
+                          class="inline-flex relative items-center cursor-pointer"
+                        >
+                          <input
+                            type="checkbox"
+                            id="togglerm1"
+                            class="sr-only peer"
+                            onchange="saklar()"
+                          />
+                          <div
+                            class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                          ></div>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                      
                 </div>
-
 
                 <div class="col">
                   <div class="card">
                     <div class="card-header">
-                        <h1>RUANGAN TIDUR</h1>
+                      <h1>RUANGAN TIDUR</h1>
                     </div>
                     <div class="card-body">
                       <h5 class="card-title"></h5>
                       <div class="ruangTidur">
-
-                          <div class="rtlampu1">
-                        <img src="assets/images/off.gif" alt="" id="lampu1rt">
-                        <label for="togglert1" class="inline-flex relative items-center
-                        cursor-pointer">
-                          <input type="checkbox" id="togglert1" class="sr-only
-                              peer" onchange="saklar()">
-                          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
-                              peer-focus:ring-4 peer-focus:ring-blue-300
-                              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-                              peer-checked:after:translate-x-full peer-checked:after:border-white
-                              after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                              after:bg-white after:border-gray-300 after:border after:rounded-full
-                              after:h-5 after:w-5 after:transition-all dark:border-gray-600
-                              peer-checked:bg-blue-600"></div>
+                        <div class="rtlampu1">
+                          <img
+                            src="assets/images/off.gif"
+                            alt=""
+                            id="lampu1rt"
+                          />
+                          <label
+                            for="togglert1"
+                            class="inline-flex relative items-center cursor-pointer"
+                          >
+                            <input
+                              type="checkbox"
+                              id="togglert1"
+                              class="sr-only peer"
+                              onchange="saklar()"
+                            />
+                            <div
+                              class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                            ></div>
                           </label>
-                    </div>
+                        </div>
 
-                    <div class="rtlampu2">
-                      <img src="assets/images/off.gif" alt="" id="lampu2rt">
-                      <label for="togglert2" class="inline-flex relative items-center
-                          cursor-pointer">
-                          <input type="checkbox" id="togglert2" class="sr-only
-                              peer" onchange="saklar()">
-                          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
-                              peer-focus:ring-4 peer-focus:ring-blue-300
-                              dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-                              peer-checked:after:translate-x-full peer-checked:after:border-white
-                              after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                              after:bg-white after:border-gray-300 after:border after:rounded-full
-                              after:h-5 after:w-5 after:transition-all dark:border-gray-600
-                              peer-checked:bg-blue-600">
-                          </div>
-                      </label>
-                      <br>
-                      <br>
-                        <label for="togglerkallrt" class="inline-flex relative items-center
-                        cursor-pointer">
-                        <input type="checkbox" id="togglerkallrt" class="sr-only
-                        peer" onchange="saklar()">
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none
-                        peer-focus:ring-4 peer-focus:ring-blue-300
-                        dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700
-                        peer-checked:after:translate-x-full peer-checked:after:border-white
-                        after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                        after:bg-white after:border-gray-300 after:border after:rounded-full
-                        after:h-5 after:w-5 after:transition-all dark:border-gray-600
-                        peer-checked:bg-blue-600"></div>
-                        </label>
+                        <div class="rtlampu2">
+                          <img
+                            src="assets/images/off.gif"
+                            alt=""
+                            id="lampu2rt"
+                          />
+                          <label
+                            for="togglert2"
+                            class="inline-flex relative items-center cursor-pointer"
+                          >
+                            <input
+                              type="checkbox"
+                              id="togglert2"
+                              class="sr-only peer"
+                              onchange="saklar()"
+                            />
+                            <div
+                              class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                            ></div>
+                          </label>
+                          <br />
+                          <br />
+                          <label
+                            for="togglerkallrt"
+                            class="inline-flex relative items-center cursor-pointer"
+                          >
+                            <input
+                              type="checkbox"
+                              id="togglerkallrt"
+                              class="sr-only peer"
+                              onchange="saklar()"
+                            />
+                            <div
+                              class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                            ></div>
+                          </label>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                </div>
 
+                  <div class="col">
+                    <div class="card">
+						<div class="card-header">
+						  <h1>RUANGAN TAMU</h1>
+						</div>
+						<div class="card-body">
+						  <h5 class="card-title"></h5>
+						  <div class="ruangTamu">
+							<div class="rtmlampu1">
+							  <img src="assets/images/off.gif" alt="" id="lampu1rtm" />
+							  <label
+								for="togglertm1"
+								class="inline-flex relative items-center cursor-pointer"
+							  >
+								<input
+								  type="checkbox"
+								  id="togglertm1"
+								  class="sr-only peer"
+								  onchange="saklar()"
+								/>
+								<div
+								  class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+								></div>
+							  </label>
+							</div>
+		
+							<div class="rtmlampu2">
+							  <img src="assets/images/off.gif" alt="" id="lampu2rtm" />
+							  <label
+								for="togglertm2"
+								class="inline-flex relative items-center cursor-pointer"
+							  >
+								<input
+								  type="checkbox"
+								  id="togglertm2"
+								  class="sr-only peer"
+								  onchange="saklar()"
+								/>
+								<div
+								  class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+								></div>
+							  </label>
+							</div>
+		
+							<div class="rtmlampu3">
+							  <img src="assets/images/off.gif" alt="" id="lampu3rtm" />
+							  <label
+								for="togglertm3"
+								class="inline-flex relative items-center cursor-pointer"
+							  >
+								<input
+								  type="checkbox"
+								  id="togglertm3"
+								  class="sr-only peer"
+								  onchange="saklar()"
+								/>
+								<div
+								  class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+								></div>	
+							  </label>						
+							</div>
 
-                <div class="col">
-                    <h1>RUANGAN TAMU</h1>
-                    <img src="assets/images/on.gif" alt="">
-                    <img src="assets/images/on.gif" alt="">
-                    <img src="assets/images/on.gif" alt="">
-                    <img src="assets/images/on.gif" alt="">
+							<div class="rtmlampu4">
+								<img src="assets/images/off.gif" alt="" id="lampu4rtm" />
+								<label
+								  for="togglertm4"
+								  class="inline-flex relative items-center cursor-pointer"
+								>
+								  <input
+									type="checkbox"
+									id="togglertm4"
+									class="sr-only peer"
+									onchange="saklar()"
+								  />
+								  <div
+									class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+								  ></div>
+						  		</label>
+							 </div>
 
+							 <label
+							 for="togglerkallrtm"
+							 class="inline-flex relative items-center cursor-pointer"
+						   >
+							 <input
+							   type="checkbox"
+							   id="togglerkallrtm"
+							   class="sr-only peer"
+							   onchange="saklar()"
+							 />
+							 <div
+							   class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+							 ></div>
+						   </label>
                   </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-     </div>
-</body>
+      </div>
+    </div>
+  </body>
+</html>
