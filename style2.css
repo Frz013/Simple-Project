@@ -12,3 +12,12 @@
 .col-sm-4 {
     display: flex;
 }
+
+body {
+    height: 10000px;
+}
+
+.col img {
+    height: 100px;
+    width: 100px;
+}
